@@ -19,7 +19,6 @@ function longest_substring(str) {
     var result = '', temp = prev_char;
     var start_index = 0;
     var end_index = 1;
-    
     var i = 1;
     var current_len = 1;
     var max_length = 0;
@@ -28,7 +27,7 @@ function longest_substring(str) {
     while(i < len){
         if(prev_char !== str[i] && temp.indexOf(str[i]) === -1){
             memo[i] = 1 + memo[i - 1];
-            temp += prev_char;
+            temp += str[i];
             current_len++;
             prev_index = i;
             i++;
