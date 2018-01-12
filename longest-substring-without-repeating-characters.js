@@ -29,3 +29,5 @@ function longest_substring(str) {
 
     return max_length;
 }
+
+longest_substring('abcabcbb');
