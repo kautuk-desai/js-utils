@@ -51,8 +51,6 @@ class Queue extends Node {
     isEmpty(){
         return (this.length === 0 ? true : false);
     };
-
-
 };
 
 var obj = new Queue();
